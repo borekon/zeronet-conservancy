@@ -10,7 +10,7 @@ WORKDIR /home/service-0net
 
 COPY requirements.txt .
 
-RUN python3 -m pip install --require-hashes --no-cache-dir -r requirements.txt
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 # the part below is updated with source updates
 

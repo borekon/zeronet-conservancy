@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-RUN apk --update --no-cache --no-progress add git alpine-sdk libffi-dev openssl autoconf automake libtool
+RUN apk --update --no-cache --no-progress add git alpine-sdk libffi-dev openssl autoconf automake libtool gmp-dev
 
 RUN adduser -u 1600 -D service-0net
 
